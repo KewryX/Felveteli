@@ -13,15 +13,14 @@
     {% if vaneinput %}
         
         {% if voltilyen %}
-        
-            
-            {% if felvettek %}
-            <p>Kedves {{nev}}! Felvettek!</p>
-            {% else %}
-            <p>Kedves {{nev}}! Nem vettek fel! :c</p>
-            {% endif %}
                 
-        
+        <p>Kedves {{nev}}! Az felvételin szerzett {{pontszam}} pontoddal az alábbi szakokra vettek fel:</p>    
+        <p>A:{{Atagozat}}</p>
+        <p>B:{{Btagozat}}</p>
+        <p>C:{{Ctagozat}}</p>
+        <p>D:{{Dtagozat}}</p>
+        <p>E:{{Etagozat}}</p>
+        <p>F:{{Ftagozat}}</p>
         {% else %}
         <p>Nincs ilyen OM azonosító a rendszerben... -_-</p>
         {% endif %}

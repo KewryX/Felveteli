@@ -7,8 +7,14 @@ from django.db import models
 class Diak(models.Model):
     oktatasi_azonosito = models.CharField(max_length=30)    
     nev = models.CharField(max_length=30)
-    felvettek_e = models.BooleanField()
-
+    pontszam = models.IntegerField(max_length=3)
+    Atagozat = models.BooleanField()
+    Btagozat = models.BooleanField()
+    Ctagozat = models.BooleanField()
+    Dtagozat = models.BooleanField()
+    Etagozat = models.BooleanField()
+    Ftagozat = models.BooleanField()
+    
     class Meta:
         verbose_name = "Diak"
         verbose_name_plural = "Diakok"
